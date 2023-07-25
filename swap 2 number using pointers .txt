@@ -1,0 +1,22 @@
+#include<iostream>
+void swapx(int *x,int *y );
+using namespace std;
+int main()
+{
+    int v1=5;
+    int v2=6;
+    cout<<"before swap v1 : "<<v1<<endl;
+    cout<<"before swap v2 : "<<v2<<endl;
+    swapx(&v1,&v2);
+    cout<<"after swap v1 : "<<v1<<endl;
+    cout<<"after swap v2 : "<<v2<<endl;
+
+}
+void swapx(int *x,int *y )
+{
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+
+}

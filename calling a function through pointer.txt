@@ -1,0 +1,12 @@
+#include <iostream>
+void call();
+using namespace std;
+int main()
+{
+    void (*calling)()=&call;
+    calling();
+}
+ void call()
+{
+    cout<<" i was called through pointers";
+}
